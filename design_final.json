@@ -1,0 +1,9 @@
+{
+ "design": "A7",
+ "proposed_kw": {
+  "money_weight": 1.0,
+  "sibling_rule": false,
+  "lone_rows": true
+ },
+ "date": "2026-11-09"
+}

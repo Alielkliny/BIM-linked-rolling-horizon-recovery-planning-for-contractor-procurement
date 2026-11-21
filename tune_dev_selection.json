@@ -1,0 +1,125 @@
+{
+ "table": [
+  {
+   "policy": "budgeted_robust",
+   "variant": "money_weight0.5",
+   "mean_delay": 11.233333333333333,
+   "total_cost": 35272.984540777776,
+   "n": 90
+  },
+  {
+   "policy": "budgeted_robust",
+   "variant": "money_weight1.0",
+   "mean_delay": 11.744444444444444,
+   "total_cost": 34782.27941888889,
+   "n": 90
+  },
+  {
+   "policy": "budgeted_robust",
+   "variant": "money_weight2.0",
+   "mean_delay": 12.633333333333333,
+   "total_cost": 36066.52173866667,
+   "n": 90
+  },
+  {
+   "policy": "buffer_management",
+   "variant": "zone_scale0.5",
+   "mean_delay": 9.733333333333333,
+   "total_cost": 41908.513664555554,
+   "n": 90
+  },
+  {
+   "policy": "buffer_management",
+   "variant": "zone_scale1.0",
+   "mean_delay": 9.333333333333334,
+   "total_cost": 37454.525539,
+   "n": 90
+  },
+  {
+   "policy": "buffer_management",
+   "variant": "zone_scale1.5",
+   "mean_delay": 9.155555555555555,
+   "total_cost": 34028.451124666666,
+   "n": 90
+  },
+  {
+   "policy": "proposed",
+   "variant": "money_weight0.5",
+   "mean_delay": 9.722222222222221,
+   "total_cost": 32314.765917555553,
+   "n": 90
+  },
+  {
+   "policy": "proposed",
+   "variant": "money_weight1.0",
+   "mean_delay": 9.988888888888889,
+   "total_cost": 32163.591742,
+   "n": 90
+  },
+  {
+   "policy": "proposed",
+   "variant": "money_weight2.0",
+   "mean_delay": 10.833333333333334,
+   "total_cost": 32774.43238888889,
+   "n": 90
+  },
+  {
+   "policy": "reactive_expediting",
+   "variant": "theta10",
+   "mean_delay": 9.488888888888889,
+   "total_cost": 39123.68399233333,
+   "n": 90
+  },
+  {
+   "policy": "reactive_expediting",
+   "variant": "theta20",
+   "mean_delay": 9.488888888888889,
+   "total_cost": 38346.652314555555,
+   "n": 90
+  },
+  {
+   "policy": "reactive_expediting",
+   "variant": "theta5",
+   "mean_delay": 9.488888888888889,
+   "total_cost": 39794.212259,
+   "n": 90
+  },
+  {
+   "policy": "reported_rescheduling",
+   "variant": "money_weight0.5",
+   "mean_delay": 10.922222222222222,
+   "total_cost": 35580.65662011111,
+   "n": 90
+  },
+  {
+   "policy": "reported_rescheduling",
+   "variant": "money_weight1.0",
+   "mean_delay": 10.911111111111111,
+   "total_cost": 35370.773568888886,
+   "n": 90
+  },
+  {
+   "policy": "reported_rescheduling",
+   "variant": "money_weight2.0",
+   "mean_delay": 10.744444444444444,
+   "total_cost": 34518.89277766667,
+   "n": 90
+  }
+ ],
+ "chosen": {
+  "budgeted_robust": "money_weight1.0_dev_q0.75",
+  "buffer_management": "zone_scale1.5",
+  "proposed": "money_weight0.5",
+  "reactive_expediting": "theta20",
+  "reported_rescheduling": "money_weight4.0"
+ },
+ "rule": "lowest mean total disruption cost on the tuning streams; mean delay tie-break within 1%",
+ "chosen_before_amendment4": {
+  "budgeted_robust": "money_weight1.0",
+  "buffer_management": "zone_scale1.5",
+  "proposed": "money_weight0.5",
+  "reactive_expediting": "theta20",
+  "reported_rescheduling": "money_weight2.0"
+ },
+ "amendment4": "extended grids on tuning streams 0-9 (results/raw/tune_ext_*.csv); same rule; framework frozen"
+}
